@@ -9,12 +9,15 @@ with open("emoticons.json", 'r', encoding="utf8") as fp:
 
 ## create tkinter window
 window = tk.Tk()
+# set title and icon
+window.wm_title("emoticon paster")
+window.iconbitmap("caticon.ico")
+# set size and prevent resizing
+window.geometry("350x350")
+window.resizable(width=False, height=False)
 # make it stay on top
 window.attributes('-topmost', 'true')
-# set size
-window.geometry("350x350")
-# prevent resizing
-window.resizable(width=False, height=False)
+
 # define font
 bigfont = ("Arial", 14)
 
